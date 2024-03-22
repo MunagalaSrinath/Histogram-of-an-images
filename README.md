@@ -26,15 +26,15 @@ The Histogram of gray scale image and color image is shown.
 
 ## Program:
 ```python
-# Developed By: Koti Sai Sankar
-# Register Number: 212222240111
+# Developed By: M Srinath
+# Register Number: 212222230147
 ```
 # Grayscale image and Color image
 ```
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("gian.png")
-color_image = cv2.imread("simpson.jpg",-1)
+gray_image = cv2.imread("a")
+color_image = cv2.imread("b.jpg",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
@@ -44,8 +44,8 @@ cv2.destroyAllWindows()
 ```
 import numpy as np
 import cv2
-Gray_image = cv2.imread("Gian.png")
-Color_image = cv2.imread("Simpson.jpg")
+Gray_image = cv2.imread("a.j")
+Color_image = cv2.imread("b.jpg")
 import matplotlib.pyplot as plt
 gray_hist = cv2.calcHist([Gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([Color_image],[0],None,[256],[0,256])
@@ -69,7 +69,7 @@ cv2.waitKey(0)
 # Histogram equalization of Grayscale image
 ```
 import cv2
-gray_image = cv2.imread("Simpson.jpg",0)
+gray_image = cv2.imread("b.jpg",0)
 cv2.imshow('Grey Scale Image',gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
